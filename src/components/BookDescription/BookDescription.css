@@ -1,0 +1,44 @@
+.containerImgAndBtn {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.containerImgAndBtn div {
+    width: 70%;
+}
+
+.titleModal {
+    width: 100% !important;
+}
+
+.titleModal h2 {
+    width: 100%;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.urlBook {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    margin-top: 0.7rem;
+    background-color: #039be5;
+    border-radius: 0.4rem;
+}
+
+.containerModalImg {
+    padding-right: 2rem;
+}
+
+.containerAboutAuthor strong,
+.containerPriceAndPages strong,
+.containerDescripcion strong {
+    text-transform: uppercase;
+}
