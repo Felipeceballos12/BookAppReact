@@ -12,8 +12,6 @@ function App() {
   const [modalOpen, setModalOpen] = useState(false);
   const [currentBook, setCurrentBook] = useState({});
   
-
-
   return (
     <>
       <Search

@@ -37,6 +37,7 @@ export function useApiBook( searchValue ) {
         })
         .catch(err => {
             console.error(err);
+            setError(true);
         });
 
     }, [searchValue]);
