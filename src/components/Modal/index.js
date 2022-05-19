@@ -8,7 +8,7 @@ export function Modal({ children, setModalOpen }) {
     }
 
     return ReactDom.createPortal(
-        <section className='backgroundModal'>
+        <section className='backgroundModal' onClick={ () => { onClickCloseModal() } }>
             <section className="modal-content">
               <span className="close" onClick={ () => { onClickCloseModal() } }>&times;</span>
               { children }

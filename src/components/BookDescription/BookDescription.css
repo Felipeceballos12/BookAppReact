@@ -1,22 +1,20 @@
 .containerImgAndBtn {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
     margin-bottom: 1rem;
 }
 
 .containerImgAndBtn div {
-    width: 70%;
+    width: 100%;
 }
 
 .titleModal {
-    width: 100% !important;
+    width: 100%;
 }
 
 .titleModal h2 {
-    width: 100%;
-
-    white-space: nowrap;
+    white-space: pre-wrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -40,5 +38,19 @@
 .containerAboutAuthor strong,
 .containerPriceAndPages strong,
 .containerDescripcion strong {
-    text-transform: uppercase;
+    text-transform: capitalize;
+}
+
+@media screen and (max-width: 600px) {
+    .containerImgAndBtn {
+        max-width: 100%;
+    }
+
+    .containerModalImg {
+        display: none;
+    }
+
+    .titleModal h2 {
+        font-size: 1.2rem;
+    }
 }

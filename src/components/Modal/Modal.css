@@ -1,5 +1,5 @@
 .backgroundModal {
-  background: rgba(32, 35, 41, 0.8);
+  background-color: rgba(32, 35, 41, 0.8);
   position: fixed;
   top: -10px;
   bottom: -10px;
@@ -30,6 +30,7 @@
   padding: 30px;
   width: 80%; /* Could be more or less, depending on screen size */
   border-radius: 1rem;
+  z-index: 2;
 }
 
 /* The Close Button */

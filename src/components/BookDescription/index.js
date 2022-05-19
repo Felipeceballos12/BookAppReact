@@ -39,8 +39,8 @@ export function BookDescription({ currentBook }) {
             </div>
             <div>
                 <p className="containerDescripcion" style={ 
-                    currentBook.description.length > 538 
-                        ? { height:"204.8px", overflowY:"auto" } 
+                    currentBook.description.length > 334 
+                        ? { height:"100px", overflowY:"auto" } 
                         : { height: "100%" }
                 }>
                     <strong>description: </strong>
