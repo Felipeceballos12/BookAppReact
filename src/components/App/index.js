@@ -4,6 +4,8 @@ import { BookDescription } from '../BookDescription';
 import { Books } from '../Books';
 import { Modal } from '../Modal';
 import { Search } from '../Search';
+import { Loading } from '../Loading';
+import { Book } from '../Book';
 
 function App() {
 
@@ -33,13 +35,26 @@ function App() {
         )
       }
 
-      <Books
-        listBooks={ listBooks }
-        error={ error }
-        loading={ loading }
-        setModalOpen={ setModalOpen }
-        setCurrentBook={ setCurrentBook }
-      />
+      <Books>
+        {
+          loading && <Loading></Loading>
+        }
+        {
+          error && <p>This book doesn't exist</p>
+        }
+        {
+          listBooks.length > 0 && !error
+              &&
+                (listBooks.map(book => (
+                  <Book
+                    key={Math.random()}
+                    book={ book }
+                    setModalOpen={ setModalOpen }
+                    setCurrentBook={ setCurrentBook }
+                  />
+                )))
+        }
+      </Books>
     </>
   );
 }
