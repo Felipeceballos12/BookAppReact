@@ -1,5 +1,5 @@
 const Test = () => {
-  reutrn(
+  return (
     <section>
       <h1>Hola</h1>
     </section>
